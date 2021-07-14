@@ -57,11 +57,11 @@ $n = count($eventos);
                         <div class="container-card-post-link">
                             <div class="card-post-link" style="background-image: url(<?php echo $eventos[$i]['thumbnail'];?>);"></div>
                         </div>
-                        <div class="d-flex mt-4">
-                            <h2><?php echo $eventos[$i]['titulo']?></h2>
+                        <div class="d-flex mt-1">
+                            <h2 class="pl-3"><?php echo $eventos[$i]['titulo']?></h2>
                         </div>
-                        <div class="d-flex">
-                            <span class="mt-3">Continue lendo</span>
+                        <div class="d-flex mb-2">
+                            <span class="pl-3 mt-1">Continue lendo</span>
                         </div>
                     </div>
                 </a>

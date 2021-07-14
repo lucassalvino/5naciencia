@@ -8,7 +8,7 @@ get_header();?>
 <div class="d-flex justify-content-center align-items-center w-100">
     <div class="d-flex justify-content-center align-items-center conteudo">
         <div class="d-flex pt-4 titulo">
-            <h2 class="text-white">PODCASTS</h2>
+            <h2>PODCASTS</h2>
         </div>
     </div>
 </div>

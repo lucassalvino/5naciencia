@@ -127,7 +127,7 @@ $n = count($eventos);
                                 <a href="<?php echo $eventos[$i]['link'];?>">
                                     <div class="d-flex justify-content-center align-items-center w-100 h-100 flex-column">
                                         <h2><?php echo $eventos[$i]['titulo']?></h2>
-                                        <span class="mt-3">Continue lendo</span>
+                                        <span class="mt-1">Continue lendo</span>
                                     </div>
                                 </a>
                             </div>

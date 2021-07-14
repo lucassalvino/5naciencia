@@ -28,16 +28,16 @@ $n = count($eventos);
     <div class="inner-conteudo pt-3 pb-3 w-100">
         <div class="d-flex justify-content-center align-items-center flex-wrap w-100">
             <?php for($i=0;$i<$n;$i++):?>
-                <a class="d-flex w-100 container-card-post pt-4" href="<?php echo $eventos[$i]['link'];?>">
+                <a class="d-flex w-100 container-card-post" href="<?php echo $eventos[$i]['link'];?>">
                     <div class="d-flex flex-column justify-content-start align-items-start w-100">
                         <div class="container-card-post-link w-100">
                             <div class="card-post-link" style="background-image: url(<?php echo $eventos[$i]['thumbnail'];?>);"></div>
                         </div>
-                        <div class="d-flex mt-4">
-                            <h2><?php echo $eventos[$i]['titulo']?></h2>
+                        <div class="d-flex mt-2">
+                            <h2 class="pl-3"><?php echo $eventos[$i]['titulo']?></h2>
                         </div>
-                        <div class="d-flex">
-                            <span class="mt-3">Continue lendo</span>
+                        <div class="d-flex pb-2">
+                            <span class="pl-3 mt-1">Continue lendo</span>
                         </div>
                     </div>
                 </a>
