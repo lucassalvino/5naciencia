@@ -116,11 +116,6 @@ if(isset($linkdin)){
                         HOME
                     </a>
                 </div>
-                <div class="d-flex menu-opcao" id="sobre">
-                    <a href="<?php echo get_home_url();?>/sobre">
-                        SOBRE
-                    </a>
-                </div>
                 <div class="d-flex menu-opcao" id="eventos">
                     <a href="<?php echo get_home_url();?>/artigos">
                         ARTIGOS
@@ -134,6 +129,11 @@ if(isset($linkdin)){
                 <div class="d-flex menu-opcao" id="contato">
                     <a href="<?php echo get_home_url();?>/contato">
                         CONTATO
+                    </a>
+                </div>
+                <div class="d-flex menu-opcao" id="sobre">
+                    <a href="<?php echo get_home_url();?>/sobre">
+                        SOBRE
                     </a>
                 </div>
                 <div class="show-mobile w-100">
