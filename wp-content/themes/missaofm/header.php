@@ -86,6 +86,15 @@ if(isset($linkdin)){
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="<?php  echo bloginfo("template_url");?>/assets/css/main.css?v=1.4">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVD7YQMXN2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PVD7YQMXN2');
+    </script>
 </head>
 <header>
     <div class="d-flex menu-topo">
