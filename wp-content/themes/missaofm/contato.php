@@ -15,7 +15,7 @@ get_header();?>
 
 <section id="sessao-contato" class="mb-5 mt-5">
     <div class="d-flex flex-column contato-form">
-        <form action="#" class="d-flex w-100 flex-column">
+        <form action="#" id="form-contato" class="d-flex w-100 flex-column">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="d-flex">
                     <h3 class="titulo-contato">Contato</h3>
@@ -52,13 +52,36 @@ get_header();?>
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <div class="d-flex">
+                <div id="container-btn">
                     <button class="button-missao" id="btnenviarcontato">Enviar</button>
+                </div>
+                <div class="d-flex" id="container-load">
+                    <div style="display: none;" class="lds-dual-ring"></div>
                 </div>
             </div>
         </form>
     </div>
 </section>
+<div class="modal fade" id="modalsucesso" tabindex="-1" role="dialog" aria-labelledby="modalsucessoTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="d-flex justify-content-center align-items-center flex-column">
+          <div class="d-flex mt-4">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+          </div>
+          <div class="d-flex mt-4">
+              <span> Recebemos seu contato, logo entraremos em contato!</span>
+          </div>
+          <div class="d-flex mt-3 pb-3">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok!</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 <section id="mapcontainer" class="w-100 pb-5">
     <div class="d-flex justify-content-center align-items-center w-100">
         <div class="d-flex w-100" style="max-width: 1200px!important;">

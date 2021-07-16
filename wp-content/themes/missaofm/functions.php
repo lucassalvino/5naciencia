@@ -107,3 +107,32 @@ function register_podcast_post(){
 	);
 	register_post_type( 'post_podcast', $args );
 }
+
+function EnviaContato(){
+	wp_enqueue_script('scripts', get_template_directory_uri()."/assets/js/contato.js");
+	wp_localize_script('scripts', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php'), 'chave' => "cafecomleite"));
+}
+
+add_action('wp_enqueue_scripts', 'EnviaContato');
+
+function GeraEmail($dados){
+	$email = "";
+	$email.="<b>Nome: </b> ".$dados['nome']."<br></br>";
+	$email.="<b>E-mail: </b> ".$dados['email']."<br></br>";
+	$email.="<b>Telefone: </b> ".$dados['telefone']."<br></br>";
+	$email.="<b>Mensagem: </b> ".$dados['mensagem']."<br></br>";
+	return $email;
+}
+
+function AcaoEnviaContato(){
+	$headers =  array('Content-Type: text/html; charset=UTF-8');
+	$email = GeraEmail($_REQUEST);
+	$enviou = wp_mail('lucassalvino1@gmail.com',
+         "[IMPORTANTE] - Nova Contato CINCO NA CIENCIA",
+		 $email,
+		 $headers);
+	echo "{ok:'ok'}";
+}
+
+add_action('wp_ajax_EnviaContato', 'AcaoEnviaContato');
+add_action( 'wp_ajax_nopriv_EnviaContato', 'AcaoEnviaContato' );
