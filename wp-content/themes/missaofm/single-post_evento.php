@@ -55,8 +55,8 @@ $n = count($eventos);
             <?php for($i=0;$i<$n;$i++):?>
                 <a class="d-flex container-card-post" href="<?php echo $eventos[$i]['link'];?>">
                     <div class="d-flex flex-column justify-content-start align-items-start">
-                        <div class="container-card-post-link">
-                            <div class="card-post-link" style="background-image: url(<?php echo $eventos[$i]['thumbnail'];?>);"></div>
+                        <div class="container-card-post-link w-100">
+                            <div class="card-post-link w-100" style="background-image: url(<?php echo $eventos[$i]['thumbnail'];?>);"></div>
                         </div>
                         <div class="d-flex mt-1">
                             <h2 class="pl-3"><?php echo $eventos[$i]['titulo']?></h2>

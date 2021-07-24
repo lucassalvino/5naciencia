@@ -31,7 +31,7 @@ $n = count($eventos);
                 <a class="d-flex w-100 container-card-post" href="<?php echo $eventos[$i]['link'];?>">
                     <div class="d-flex flex-column justify-content-start align-items-start w-100">
                         <div class="container-card-post-link w-100">
-                            <div class="card-post-link" style="background-image: url(<?php echo $eventos[$i]['thumbnail'];?>);"></div>
+                            <div class="card-post-link w-100" style="background-image: url(<?php echo $eventos[$i]['thumbnail'];?>);"></div>
                         </div>
                         <div class="d-flex mt-2">
                             <h2 class="pl-3"><?php echo $eventos[$i]['titulo']?></h2>
