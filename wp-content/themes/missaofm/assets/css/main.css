@@ -205,6 +205,13 @@ h1{
     width: 100%;
     height: auto;
 }
+.thumbnail-post-view-background{
+    width: 100%;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #logo-site.scroll{
     width: 50px;
 }

@@ -12,7 +12,7 @@ $imagem = get_the_post_thumbnail_url();
 
 if(!isset($palavraschave))
     $palavraschave = "";
-if(!isset($imagem)||$imagem=="")
+if(!isset($imagem) || $imagem=="")
     $imagem = get_field('imagem_compartilhamento','option');
 $facebook = get_field('facebook', 'option');
 $instagram = get_field('instagram', 'option');
@@ -85,7 +85,7 @@ if(isset($linkdin)){
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="<?php  echo bloginfo("template_url");?>/assets/css/main.css?v=1.6">
+    <link rel="stylesheet" href="<?php  echo bloginfo("template_url");?>/assets/css/main.css?v=1.7">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVD7YQMXN2"></script>
     <script>

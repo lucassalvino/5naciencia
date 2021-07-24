@@ -15,7 +15,8 @@ get_header();
             </div>
             <div class="d-flex flex-column w-100 mt-3">
                 <div class="d-flex justify-content-center align-items-center w-100">
-                    <img class="thumbnail-post-view" src="<?php echo get_the_post_thumbnail_url()?>" alt="<?php echo get_the_title();?>">
+                    <div class="thumbnail-post-view-background" style="background-image: url(<?php echo get_the_post_thumbnail_url()?>);">
+                    </div>
                 </div>
                 <div class="d-flex flex-column w-100 mt-3 conteudo-post">
                     <?php 
