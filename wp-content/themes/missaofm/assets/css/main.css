@@ -362,6 +362,12 @@ textarea{
     text-align: left;
     color: #000000;
 }
+.texto-branco{
+    color: #ffffff!important;
+}
+.texto-branco p{
+    color: #ffffff!important;
+}
 .conteudo-wordpress{
     display: flex;
     flex-direction: column;
