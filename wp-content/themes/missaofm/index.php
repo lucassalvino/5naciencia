@@ -79,7 +79,7 @@ get_header();
 <section class="fundo-padrao background-sobre pt-4" id="sobre" style="background-image: url(<?php echo get_field('banner_sobre');?>);">
     <div class="d-flex justify-content-center align-items-center flex-column pt-5 pb-5">
         <div class="d-flex texto-ler" style="max-width: 900px;">
-            <p class="text-center">
+            <p class="text-center texto-branco">
                 <?php echo get_field('texto_sobre');?>
             </p>
         </div>
