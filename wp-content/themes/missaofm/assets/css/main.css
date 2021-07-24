@@ -596,6 +596,7 @@ details[open] summary ~ * {
     max-width: 960px;
     height: 350px;
     max-height: 350px;
+    background-position: center;
 }
 .conteudo-carousel-eventos{
     height: 100%;

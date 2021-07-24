@@ -126,7 +126,7 @@ $n = count($eventos);
                             <div class="conteudo-carousel-eventos">
                                 <a href="<?php echo $eventos[$i]['link'];?>">
                                     <div class="d-flex justify-content-center align-items-center w-100 h-100 flex-column">
-                                        <h2><?php echo $eventos[$i]['titulo']?></h2>
+                                        <h2 class="pl-2 pr-3"><?php echo $eventos[$i]['titulo']?></h2>
                                         <span class="mt-1">Continue lendo</span>
                                     </div>
                                 </a>
